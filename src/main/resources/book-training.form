@@ -1,0 +1,69 @@
+{
+  "components": [
+    {
+      "text": "# Booking New Training Session",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0njioga",
+        "columns": null
+      },
+      "id": "Field_0kvgh8b"
+    },
+    {
+      "label": "Firstname",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1dqb536",
+        "columns": null
+      },
+      "id": "Field_03mv44d",
+      "key": "firstname"
+    },
+    {
+      "values": [
+        {
+          "label": "Camunda 8 for Beginners",
+          "value": "camunda8_for_beginners"
+        },
+        {
+          "label": "Camunda 7 for Java Developers",
+          "value": "camunda7_for_java"
+        },
+        {
+          "label": "Camunda 7 for Beginners",
+          "value": "camunda7_for_beginners"
+        }
+      ],
+      "label": "Select your training",
+      "type": "select",
+      "layout": {
+        "row": "Row_0b3jjuc",
+        "columns": null
+      },
+      "id": "Field_1xmwwhg",
+      "key": "selected_training"
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Choose your desired training date",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1grg1j4",
+        "columns": null
+      },
+      "id": "Field_17fge29",
+      "key": "desired_training_date"
+    }
+  ],
+  "type": "default",
+  "id": "book-training-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.5.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.22.0"
+  },
+  "schemaVersion": 16
+}
