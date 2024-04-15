@@ -7,7 +7,6 @@
 # https://docs.camunda.io/docs/self-managed/platform-deployment/helm-kubernetes/guides/local-kubernetes-cluster/
 
 # This is a lightweight configuration with Zeebe, Operate, Tasklist, and Elasticsearch
-# See docker-compose.yml for a configuration that also includes Optimize, Identity, and Keycloak.
 
 services:
 
@@ -114,24 +113,9 @@ services:
     networks:
       - camunda-platform
 
-  kibana:
-    image: docker.elastic.co/kibana/kibana:${ELASTIC_VERSION}
-    container_name: kibana
-    ports:
-      - 5601:5601
-    volumes:
-      - kibana:/usr/share/kibana/data
-    networks:
-      - camunda-platform
-    depends_on:
-      - elasticsearch
-    profiles:
-      - kibana
-
 volumes:
   zeebe:
   elastic:
-  kibana:
 
 networks:
   camunda-platform:
